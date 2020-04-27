@@ -1,11 +1,8 @@
 package st.tel.web.tool;
 
 import com.google.gson.Gson;
-import org.apache.avro.data.Json;
-import org.mortbay.util.ajax.JSON;
 import org.springframework.stereotype.Component;
 import st.tel.web.pojo.DataObject;
-import st.tel.web.pojo.NewsList;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

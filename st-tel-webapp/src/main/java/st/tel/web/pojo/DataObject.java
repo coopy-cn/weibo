@@ -2,6 +2,7 @@ package st.tel.web.pojo;
 
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,6 +16,6 @@ public class DataObject {
 
     private String msg;
 
-    private List<NewsList> newslist;
+    private List<NewsList> newslist = new ArrayList<>();
 
 }

@@ -3,6 +3,7 @@ package st.tel.web.pojo;
 import javassist.runtime.Desc;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,7 +13,7 @@ import java.util.List;
 @Data
 public class NewsList {
 
-    private List<News> news;
+    private List<News> news = new ArrayList<>();
 
     private DescPojo desc;
 
