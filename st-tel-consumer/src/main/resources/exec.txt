@@ -1,0 +1,8 @@
+#启动生产者
+nohup java -jar tel-producer-1.0.jar data/phone.data call.log &
+#启动kafka
+kafka-server-start.sh /opt/module/kafka/config/server.properties
+#创建主题
+kafka-topics.sh --create --zookeeper linux12:2181 --replication-factor 2 --partitions 2 --topic tel
+#开启kafka控制台消费者
+kafka-console-consumer.sh --zookeeper linux12:2181 --topic phone
