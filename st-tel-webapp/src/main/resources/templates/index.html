@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
 <head>
     <link href="css/BigData.css" rel="stylesheet" type="text/css"/>
@@ -113,7 +114,7 @@
                                     <a class="localize_title">央视新闻app</a>
                                 </div>
                                 <div class="msg_cage">
-                                    <a class="localize_msg">xxx视频网站</a>
+                                    <a class="localize_msg">${dataObject.code}</a>
                                 </div>
                             </div>
                             <div class="message_scroll">
@@ -1820,6 +1821,17 @@
 
             });
     }
+
+    $(document).ready(function () {
+        $("button").click(function () {
+            $.get("http://api.tianapi.com/txapi/ncov/index?key=APIKEY",
+                function (data, status) {
+                    console.log(data);
+                    $('#result').append(JSON.stringify(data)); //返回内容绑定到ID为result的标签
+                    alert("状态码：" + data.code + "\n返回：" + data.msg);
+                });
+        });
+    });
 
     var T = setInterval(TimeControl, 2300);    //开始定时
     $(".message_scroll_box").mouseenter(function () {
