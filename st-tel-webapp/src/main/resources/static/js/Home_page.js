@@ -11,7 +11,7 @@
 //应急事件处置
 $(".message_scroll").click(function () {
     EventClick();
-    eventHandle();
+    // eventHandle();
 });
 
 //    地图切换buttn-start

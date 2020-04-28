@@ -23,8 +23,8 @@
             <li class="l_left total_chose_fr nav_active">实时监测</li>
             <li class="l_left total_chose_pl">统计分析一</li>
             <li class="l_left total_chose_pl">统计分析二</li>
-            <li class="r_right total_chose_pl">统计分析三</li>
-            <li class="r_right total_chose_pl">统计分析四</li>
+            <li class="r_right total_chose_pl">统计分析三
+            <li class="r_right total_chose_pl">统计分析四</li></li>
             <li class="r_right total_chose_pl">统计分析五</li>
         </ul>
         <div class="total_chose_box" style="display: none;">

@@ -73,8 +73,8 @@
 
                 <div class="left_cage">
                     <div class="dataAllBorder01 cage_cl" style="margin-top: 9% !important; height: 24%;">
-                        <video autoplay="autoplay" loop="loop" class="dataAllBorder02 video_cage">
-                            <source class="video" title="主监控位" src="video/test_mv02.mov"/>
+                        <video autoplay="autoplay" loop="loop" class="dataAllBorder02 video_cage" controls="controls">
+                            <source class="video" title="主监控位" src="video/Epidemic.mov"/>
                         </video>
                     </div>
                     <div class="dataAllBorder01 cage_cl" style="margin-top: 1.5% !important; height: 38%;">
@@ -104,10 +104,10 @@
                             <div class="message_scroll_box">
                                 <div class="message_scroll">
                                     <div class="scroll_top">
-                                        <span class="scroll_title">疫情警示</span>
+                                        <span class="scroll_title">疫情新闻</span>
                                         <span class="scroll_level scroll_level01">二级</span>
                                         <a class="localize"></a>
-                                        <span class="scroll_timer">3小时前</span>
+                                        <span class="scroll_timer">${newslist[0].pubDateStr}</span>
                                     </div>
                                     <div class="msg_cage">
                                         <a class="localize_title">央视新闻app</a>
@@ -118,44 +118,44 @@
                                 </div>
                                 <div class="message_scroll">
                                     <div class="scroll_top">
-                                        <span class="scroll_title">疫情警示</span>
+                                        <span class="scroll_title">疫情新闻</span>
                                         <span class="scroll_level scroll_level03">三级</span>
                                         <a class="localize"></a>
-                                        <span class="scroll_timer">3小时前</span>
+                                        <span class="scroll_timer">${newslist[1].pubDateStr}</span>
                                     </div>
                                     <div class="msg_cage">
                                         <a class="localize_title">央视新闻app</a>
                                     </div>
                                     <div class="msg_cage">
-                                        <a class="localize_msg">xxx视频网站</a>
+                                        <a class="localize_msg">${newslist[1].title}</a>
                                     </div>
                                 </div>
                                 <div class="message_scroll">
                                     <div class="scroll_top">
-                                        <span class="scroll_title">疫情警示</span>
+                                        <span class="scroll_title">疫情新闻</span>
                                         <span class="scroll_level scroll_level02">二级</span>
                                         <a class="localize"></a>
-                                        <span class="scroll_timer">3小时前</span>
+                                        <span class="scroll_timer">${newslist[2].pubDateStr}</span>
                                     </div>
                                     <div class="msg_cage">
                                         <a class="localize_title">央视新闻app</a>
                                     </div>
                                     <div class="msg_cage">
-                                        <a class="localize_msg">xxx视频网站</a>
+                                        <a class="localize_msg">${newslist[2].title}</a>
                                     </div>
                                 </div>
                                 <div class="message_scroll">
                                     <div class="scroll_top">
-                                        <span class="scroll_title">疫情警示</span>
+                                        <span class="scroll_title">疫情新闻</span>
                                         <span class="scroll_level scroll_level01">二级</span>
                                         <a class="localize"></a>
-                                        <span class="scroll_timer">3小时前</span>
+                                        <span class="scroll_timer">${newslist[3].pubDateStr}</span>
                                     </div>
                                     <div class="msg_cage">
                                         <a class="localize_title">央视新闻app</a>
                                     </div>
                                     <div class="msg_cage">
-                                        <a class="localize_msg">xxx视频网站</a>
+                                        <a class="localize_msg">${newslist[3].title}</a>
                                     </div>
                                 </div>
                             </div>
@@ -351,7 +351,7 @@
                         <div class="dataAllBorder02" id="map_title_innerbox">
                             <div class="map_title_box">
                                 <div class="map_title_innerbox">
-                                    <div class="map_title" style="background-image: url(img/second_title.png);">疫情每日分析数据
+                                    <div class="map_title" style="background-image: url(img/second_title.png);">中国疫情每日数据
                                     </div>
                                 </div>
                                 <div>
@@ -365,17 +365,17 @@
                         </div>
 
                         <div class="dataAllBorder02" id="map_title_innerbox1"
-                             style="display: none; position: relative;">
+                             style="    display: none; position: relative;">
                             <div class="map_title_box">
                                 <div class="map_title_innerbox">
                                     <div class="map_title" style="background-image: url(img/second_title.png);">
-                                        xxxxx条件扫描
+                                        事件详情
                                     </div>
                                 </div>
                             </div>
                             <ul class="tab_msg_box">
-                                <li class="tab_msg tab_msg01 tab_msg_current">xxxxx</li>
-                                <li class="tab_msg tab_msg02">xxx</li>
+                                <li class="tab_msg tab_msg01 tab_msg_current">详情页</li>
+                            <#--<li class="tab_msg tab_msg02">xxx</li>-->
                             </ul>
                             <div class="table1">
                                 <table id="table1" style="width: 100%"></table>
@@ -392,31 +392,27 @@
                     <!--顶部切换位置-->
                     <div class="dataAllBorder01 cage_cl" style="margin-top: 9% !important; height: 24%">
                         <div class="dataAllBorder02" id="cage_cl">
-                            <div class="analysis">一天流量：</div>
-                            <ul class="data_show_box">
-                                <li class="data_cage">0</li>
-                                <li class="data_cage">0</li>
-                                <li class="data_cage" style="background-image: none;">,</li>
-                                <li class="data_cage">0</li>
-                                <li class="data_cage">0</li>
-                                <li class="data_cage">2</li>
+                            <div class="analysis" style="text-align: center">全球疫情数据统计：</div>
+                            <ul class="depart_number_cage">
+                                <li class="depart_name">全球确诊人数：</li>
+                                <li class="depart_number">${globalStatistics.confirmedCount}</li>
                             </ul>
                             <div class="depart_number_box">
                                 <ul class="depart_number_cage">
-                                    <li class="depart_name">流量一：</li>
-                                    <li class="depart_number">3,238</li>
+                                    <li class="depart_name">现存确诊人数：</li>
+                                    <li class="depart_number">${globalStatistics.currentConfirmedCount}</li>
                                 </ul>
                                 <ul class="depart_number_cage">
-                                    <li class="depart_name">流量二：</li>
-                                    <li class="depart_number">1,630</li>
+                                    <li class="depart_name">累计治愈人数：</li>
+                                    <li class="depart_number">${globalStatistics.curedCount}</li>
                                 </ul>
                                 <ul class="depart_number_cage" style="margin-bottom: 0px;">
-                                    <li class="depart_name">流量三：</li>
-                                    <li class="depart_number">4,251</li>
+                                    <li class="depart_name">累计死亡人数：</li>
+                                    <li class="depart_number">${globalStatistics.deadCount}</li>
                                 </ul>
                                 <ul class="depart_number_cage" style="margin-bottom: 0px;">
-                                    <li class="depart_name">流量四：</li>
-                                    <li class="depart_number">24</li>
+                                    <li class="depart_name">新增治愈人数：</li>
+                                    <li class="depart_number">${globalStatistics.curedIncr}</li>
                                 </ul>
                             </div>
                         </div>
@@ -439,93 +435,75 @@
                     <div class="dataAllBorder01 cage_cl check_increase" style=" margin-top: 1.5% !important;">
                         <!--切换01-->
                         <div class="dataAllBorder02 over_hide dataAllBorder20" id="over_hide">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th style="width: 18%">名称</th>
-                                    <th>归属</th>
-                                    <th>程度</th>
-                                    <th>范围)</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>200m-5km</td>
-                                </tr>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>4km-80km</td>
-                                </tr>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>400m-2km</td>
-                                </tr>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>1km</td>
-                                </tr>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>2km</td>
-                                </tr>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>500m-2km</td>
-                                </tr>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>500m-10km</td>
-                                </tr>
+                        <#--<ul>-->
+                        <#--<li class="depart_name">疫情事件一：${newslist[0].title}</li>-->
+                        <#--<li class="depart_name">疫情发生时间：${newslist[0].pubDateStr}</li>-->
+                        <#--<li class="depart_name">疫情事件内容：${newslist[0].summary}</li>-->
+                        <#--<li class="depart_name">疫情信息 来源：${newslist[0].infoSource}</li>-->
+                        <#--<li class="depart_name">疫情时间链接：<a href="${newslist[0].sourceUrl}" style="color: white">详情界面链接</a></li>-->
+                        <#--</ul>-->
+                            <div class="analysis" style="text-align: center">疫情最新时间实时监测</div>
+                            <ul style="font-size: 16px;text-indent: 1em;color: white">
+                                <li>疫情事件：${newslist[0].title}</li>
+                                <li>疫情发生时间：${newslist[0].pubDateStr}</li>
+                                <li>疫情事件内容：${newslist[0].summary}</li>
+                                <li>疫情信息来源：${newslist[0].infoSource}</li>
+                                <li>疫情链接：<a href="${newslist[0].sourceUrl}" style="color: white">详情界面链接</a></li>
+                            </ul>
+                        <#--<table class="table table-bordered">-->
+                        <#--<thead>-->
+                        <#--<tr>-->
+                        <#--<th style="width: 18%">最近发生时间</th>-->
+                        <#--<th>时间一</th>-->
+                        <#--<th>来源</th>-->
+                        <#--<th>详情链接</th>-->
+                        <#--</tr>-->
+                        <#--</thead>-->
 
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th style="width: 18%">名称</th>
-                                    <th>归属</th>
-                                    <th>程度</th>
-                                    <th>范围(r=?)</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>全城</td>
-                                </tr>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>车站</td>
-                                </tr>
-                                <tr>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>xxxxxxx</td>
-                                    <td>-</td>
-                                </tr>
+                        <#--<tbody>-->
+                        <#--<#list newslist as news>-->
+                        <#--<tr>-->
+                        <#--<td>${news.pubDateStr}</td>-->
+                        <#--<td>${news.title}</td>-->
+                        <#--<td>${news.infoSource}</td>-->
+                        <#--<td>${news.sourceUrl}</td>-->
+                        <#--</tr>-->
+                        <#--</#list>-->
+                        <#--</tbody>-->
 
+                        <#--</table>-->
+                        <#--<table class="table table-bordered">-->
+                        <#--<thead>-->
+                        <#--<tr>-->
+                        <#--<th style="width: 18%">名称</th>-->
+                        <#--<th>归属</th>-->
+                        <#--<th>程度</th>-->
+                        <#--<th>范围(r=?)</th>-->
+                        <#--</tr>-->
+                        <#--</thead>-->
+                        <#--<tbody>-->
+                        <#--<tr>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>全城</td>-->
+                        <#--</tr>-->
+                        <#--<tr>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>车站</td>-->
+                        <#--</tr>-->
+                        <#--<tr>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>xxxxxxx</td>-->
+                        <#--<td>-</td>-->
+                        <#--</tr>-->
+                        <#--</tbody>-->
+                        <#--</table>-->
+                        <#---->
 
-                                </tbody>
-                            </table>
                         </div>
                         <!--切换02-->
                         <div class="dataAllBorder02 over_hide dataAllBorder20" id="over_hide1" style="display: none">
@@ -873,7 +851,7 @@
                     <div class="dataAllBorder01 cage_cl check_decrease"
                          style="margin-top: 1.5% !important; height: 32%; position: relative;">
                         <div class="dataAllBorder02 over_hide" style="padding: 1.2%;">
-                            <div class="analysis">xxxxx构成因素占比：</div>
+                            <div class="analysis">疫情主要国家占比：</div>
                             <div class="danger_contain_box">
                                 <div id="container_huan" style="height: 90%;width: 100%"></div>
                             </div>
@@ -882,14 +860,14 @@
                                 <ul class="danger_depart">
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_01.png); background-position-x: 0px"></li>
-                                    <li class="data_name">xxxxx综合</li>
+                                    <li class="data_name">中国新增病例统计</li>
                                     <li class="data data01">652</li>
                                     <li class="data data02">↑&nbsp&nbsp1.2%</li>
                                 </ul>
                                 <ul class="danger_depart">
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_02.png); background-position-x: 0px"></li>
-                                    <li class="data_name">统计一</li>
+                                    <li class="data_name">中国死亡人数溶剂</li>
                                     <li class="data data01">97</li>
                                     <li class="data data02" style="color: #ff2865;">↓&nbsp&nbsp0.3%</li>
                                 </ul>
@@ -897,7 +875,7 @@
                                 <ul class="danger_depart danger_depart01">
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_03.png); background-position-x: 0px"></li>
-                                    <li class="data_name">统计二</li>
+                                    <li class="data_name">中国重症人数统计</li>
                                     <li class="data data01">423</li>
                                     <li class="data data02">↑&nbsp&nbsp1%</li>
                                 </ul>
@@ -905,7 +883,7 @@
                                 <ul class="danger_depart danger_depart01">
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_01.png); background-position-x: 0px"></li>
-                                    <li class="data_name">统计三</li>
+                                    <li class="data_name">中国疑似人数统计</li>
                                     <li class="data data01">218</li>
                                     <li class="data data02">↑&nbsp&nbsp0.3%</li>
                                 </ul>
@@ -1679,6 +1657,7 @@
 
                 ]
             });
+
             $('#table1').bootstrapTable({
                 method: "get",
                 striped: true,
@@ -1693,32 +1672,33 @@
                 queryParams: null,
                 columns: [
                     {
-                        title: "威胁源",
+                        title: "id",
                         field: 'id',
                         align: 'center',
                         valign: 'middle'
                     },
                     {
-                        title: '辐射距离',
+                        title: '发生时间',
                         field: 'title',
                         align: 'center',
                         valign: 'middle'
                     },
                     {
-                        title: '威胁范围',
+                        title: '事件详情',
                         field: 'type',
                         align: 'center',
                         valign: 'middle'
                     },
 
                     {
-                        title: '危害类型',
+                        title: '详细链接',
                         field: 'person',
                         align: 'center'
                     }
 
                 ]
             });
+
             $('#table2').bootstrapTable({
                 method: "get",
                 striped: true,
@@ -1771,14 +1751,14 @@
                 legend: {
                     orient: 'vertical',
                     x: 'left',
-                    data: ['民用爆炸', '射钉器材', '危化品', '寄递物流', '旅店'],
+                    data: ['中国', '西班牙', '意大利', '英国', '美国'],
                     textStyle: {
                         color: "#e9ebee"
                     }
                 },
                 series: [
                     {
-                        name: '行业数据',
+                        name: '疫情数据',
                         type: 'pie',
                         center: ['80%', '50%'],
                         radius: ['50%', '80%'],
@@ -1807,11 +1787,11 @@
                             }
                         },
                         data: [
-                            {value: 335, name: '民用爆炸'},
-                            {value: 310, name: '射钉器材'},
-                            {value: 234, name: '危化品'},
-                            {value: 135, name: '寄递物流'},
-                            {value: 1548, name: '旅店'}
+                            {value: 335, name: '中国'},
+                            {value: 310, name: '西班牙'},
+                            {value: 234, name: '意大利'},
+                            {value: 135, name: '英国'},
+                            {value: 1548, name: '美国'}
                         ]
                     }
                 ]
@@ -1825,7 +1805,6 @@
                     function () {
                         $(".message_scroll_box").css({marginTop: 0});    //把顶部的边界清零
                         $(".message_scroll_box .message_scroll:first").before($(".message_scroll_box .message_scroll:last"));    //在第一个新闻后面插入最后一个新闻
-
                     });
         }
 
