@@ -861,22 +861,22 @@
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_01.png); background-position-x: 0px"></li>
                                     <li class="data_name">中国新增病例统计</li>
-                                    <li class="data data01">652</li>
-                                    <li class="data data02">↑&nbsp&nbsp1.2%</li>
+                                    <li class="data data01">5</li>
+                                    <li class="data data02">↓&nbsp&nbsp1%</li>
                                 </ul>
                                 <ul class="danger_depart">
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_02.png); background-position-x: 0px"></li>
-                                    <li class="data_name">中国死亡人数溶剂</li>
-                                    <li class="data data01">97</li>
-                                    <li class="data data02" style="color: #ff2865;">↓&nbsp&nbsp0.3%</li>
+                                    <li class="data_name">中国死亡人数统计</li>
+                                    <li class="data data01">0</li>
+                                    <li class="data data02" style="color: #ff2865;">↓&nbsp&nbsp99.9%</li>
                                 </ul>
 
                                 <ul class="danger_depart danger_depart01">
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_03.png); background-position-x: 0px"></li>
                                     <li class="data_name">中国重症人数统计</li>
-                                    <li class="data data01">423</li>
+                                    <li class="data data01">20</li>
                                     <li class="data data02">↑&nbsp&nbsp1%</li>
                                 </ul>
 
@@ -884,8 +884,8 @@
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_01.png); background-position-x: 0px"></li>
                                     <li class="data_name">中国疑似人数统计</li>
-                                    <li class="data data01">218</li>
-                                    <li class="data data02">↑&nbsp&nbsp0.3%</li>
+                                    <li class="data data01">9</li>
+                                    <li class="data data02">↓&nbsp&nbsp5%</li>
                                 </ul>
 
                             </div>
