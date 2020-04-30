@@ -28,6 +28,12 @@ public class IndexControllerApp {
     @Autowired
     private JsonEpidemic jsonEpidemic;
 
+    /**
+     * 疫情分析
+     *
+     * @param map
+     * @return
+     */
     @GetMapping("/index")
     public ModelAndView Index(Map<String, Object> map) {
         String httpUrl = "http://api.tianapi.com/txapi/ncov/index";
@@ -46,6 +52,11 @@ public class IndexControllerApp {
         map.put("globalStatistics", globalStatistics);
 
         return new ModelAndView("/index", map);
+    }
+
+    @GetMapping("/sentiment")
+    public ModelAndView sentiment() {
+        return new ModelAndView("/public");
     }
 
 }

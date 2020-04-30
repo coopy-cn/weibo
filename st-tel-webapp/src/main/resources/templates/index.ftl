@@ -30,12 +30,9 @@
                 <div style="height: 32px;"></div>
                 <span class="chose_tltle">请选择年份：</span>
                 <select class="year_chose">
-                    <option>2017</option>
-                    <option>2016</option>
-                    <option>2015</option>
-                    <option>2014</option>
-                    <option>2013</option>
-                    <option>2012</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
                 </select>
                 <span class="chose_tltle">请输入月份：</span>
                 <input class="chose_text_in">
@@ -442,7 +439,7 @@
                         <#--<li class="depart_name">疫情信息 来源：${newslist[0].infoSource}</li>-->
                         <#--<li class="depart_name">疫情时间链接：<a href="${newslist[0].sourceUrl}" style="color: white">详情界面链接</a></li>-->
                         <#--</ul>-->
-                            <div class="analysis" style="text-align: center">疫情最新时间实时监测</div>
+                            <div class="analysis" style="text-align: center">疫情最新事件实时监测</div>
                             <ul style="font-size: 16px;text-indent: 1em;color: white">
                                 <li>疫情事件：${newslist[0].title}</li>
                                 <li>疫情发生时间：${newslist[0].pubDateStr}</li>
@@ -861,22 +858,22 @@
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_01.png); background-position-x: 0px"></li>
                                     <li class="data_name">中国新增病例统计</li>
-                                    <li class="data data01">652</li>
+                                    <li class="data data01">22</li>
                                     <li class="data data02">↑&nbsp&nbsp1.2%</li>
                                 </ul>
                                 <ul class="danger_depart">
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_02.png); background-position-x: 0px"></li>
-                                    <li class="data_name">中国死亡人数溶剂</li>
-                                    <li class="data data01">97</li>
-                                    <li class="data data02" style="color: #ff2865;">↓&nbsp&nbsp0.3%</li>
+                                    <li class="data_name">中国死亡人数统计</li>
+                                    <li class="data data01">0</li>
+                                    <li class="data data02" style="color: #ff2865;">↓&nbsp&nbsp99.9%</li>
                                 </ul>
 
                                 <ul class="danger_depart danger_depart01">
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_03.png); background-position-x: 0px"></li>
                                     <li class="data_name">中国重症人数统计</li>
-                                    <li class="data data01">423</li>
+                                    <li class="data data01">3</li>
                                     <li class="data data02">↑&nbsp&nbsp1%</li>
                                 </ul>
 
@@ -884,8 +881,8 @@
                                     <li class="danger_ico"
                                         style="background-image: url(img/images/pic_ico_01.png); background-position-x: 0px"></li>
                                     <li class="data_name">中国疑似人数统计</li>
-                                    <li class="data data01">218</li>
-                                    <li class="data data02">↑&nbsp&nbsp0.3%</li>
+                                    <li class="data data01">22</li>
+                                    <li class="data data02" style="color: #ff2865;">↓&nbsp&nbsp1%</li>
                                 </ul>
 
                             </div>
