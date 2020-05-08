@@ -8,12 +8,11 @@ server:
 
 spring:
   freemarker:
-    request-context-attribute: req  #req\u8BBF\u95EErequest
-    suffix: .ftl  #\u540E\u7F00\u540D
-#    content-type: text/html
+    request-context-attribute: req
+    suffix: .ftl
     enabled: true
-    cache: false #\u7F13\u5B58\u914D\u7F6E
-    template-loader-path: classpath:/templates/ #\u6A21\u677F\u52A0\u8F7D\u8DEF\u5F84 \u6309\u9700\u914D\u7F6E
-    charset: UTF-8 #\u7F16\u7801\u683C\u5F0F
+    cache: false
+    template-loader-path: classpath:/templates/
+    charset: UTF-8
     settings:
-      number_format: '0.##'   #\u6570\u5B57\u683C\u5F0F\u5316\uFF0C\u65E0\u5C0F\u6570\u70B9
+      number_format:

@@ -28,7 +28,7 @@
 <!-- bnt end -->
 <div class="puleft fl">
     <div class="pulefttop"><h2 class="tith2"><span>舆情来源分析</span></h2>
-    <div class="lefttoday_tit"><p class="fl">地区：甘孜</p><p class="fr">2018-06-14</p></div>
+    <div class="lefttoday_tit"><p class="fl">地区：甘孜</p><p class="fr">2020-05-05</p></div>
     <div class="box pbox">
       <div class="lefttoday_bar pulefttoday_bar fl">
         <ul>
@@ -58,7 +58,7 @@
     </div>
     <div class="puleftboxtmidd">
       <h2 class="tith2">舆情区域分析</h2>
-          <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2018-06-10 至 2018-06-14</p></div>
+          <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2020-05-01 至 2020-05-05</p></div>
     <div class="box pbox">
       <div id="puleftboxtmidd1" class="fl puleftboxtmidd1"></div>
           <div class="pvr fr pulefttoday_bar2" >
@@ -75,7 +75,7 @@
   </div>
   <div class="puleftboxtbott">
     <h2 class="tith2 pt1">舆情环比分析</h2>
-        <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2018-06-10 至 2018-06-14</p></div>
+        <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2020-05-01 至 2020-05-05</p></div>
     <div class="box pbox">
       <div id="puleftboxtbott1" class="fl puleftboxtbott1" ></div>
       <div  class="puleftboxtbott2 fr" >
@@ -103,7 +103,7 @@
         <div class="pmidd_bott">
           <div class="pumiddboxttop1 fl">
               <h2 class="tith2 pt3">今日舆情</h2>
-              <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2018-06-10</p></div>
+              <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2020-05-01</p></div>
               <div class="puleft2height">
                     <div class="widget-inline-box text-center ">
                       <p>今日舆情总数</p>
@@ -129,36 +129,36 @@
             </div>
             <div class="pumiddboxttop2 fl">
                 <h2 class="tith2 pt3">热门信息</h2>
-                <div class="lefttoday_tit "><p class="fl">状态：已调节</p><p class="fr">时间段：2018-06-10</p></div>
+                <div class="lefttoday_tit "><p class="fl">状态：已调节</p><p class="fr">时间段：2020-05-01</p></div>
                 <div class="left2_table pumiddboxttop2_cont">
                    <ul>
                         <li>
-                        <p class="text_l">村名王某因为被隔壁邻居的狗咬了，产生了纠纷，村名报警。</p>
-                        <p class="text_r">新浪微博  转发：86  2018-06-14 11:08:56</p>
+                        <p class="text_l">${weibo.newslist[10].hotword}</p>
+                        <p class="text_r">新浪微博  热度：${weibo.newslist[10].hotwordnum}  2020-05-05 11:08:56</p>
                         </li>
                         <li class="bg">
-                        <p class="text_l">村名王某因为被隔壁邻居的狗咬了，产生了纠纷，村名报警。</p>
-                        <p class="text_r">新浪微博  转发：86   2018-06-14 11:08:56</p>
+                            <p class="text_l">${weibo.newslist[3].hotword}</p>
+                            <p class="text_r">新浪微博  热度：${weibo.newslist[3].hotwordnum}  2020-05-05 11:08:56</p>
                         </li>
                         <li>
-                        <p class="text_l">村名王某因为被隔壁邻居的狗咬了，产生了纠纷，村名报警。</p>
-                        <p class="text_r">新浪微博  转发：86  2018-06-14 11:08:56</p>
+                            <p class="text_l">${weibo.newslist[4].hotword}</p>
+                            <p class="text_r">新浪微博  热度：${weibo.newslist[4].hotwordnum}  2020-05-05 11:08:56</p>
                         </li>
                         <li class="bg">
-                        <p class="text_l">村名王某因为被隔壁邻居的狗咬了，产生了纠纷，村名报警。</p>
-                        <p class="text_r">新浪微博  转发：86   2018-06-14 11:08:56</p>
+                            <p class="text_l">${weibo.newslist[6].hotword}</p>
+                            <p class="text_r">新浪微博  热度：${weibo.newslist[6].hotwordnum}  2020-05-05 11:08:56</p>
                         </li>
                         <li>
-                        <p class="text_l">村名王某因为被隔壁邻居的狗咬了，产生了纠纷，村名报警。</p>
-                        <p class="text_r">新浪微博  转发：86  2018-06-14 11:08:56</p>
+                            <p class="text_l">${weibo.newslist[2].hotword}</p>
+                            <p class="text_r">新浪微博  热度：${weibo.newslist[2].hotwordnum}  2020-05-05 11:08:56</p>
                         </li>
                         <li class="bg">
-                        <p class="text_l">村名王某因为被隔壁邻居的狗咬了，产生了纠纷，村名报警。</p>
-                        <p class="text_r">新浪微博  转发：86   2018-06-14 11:08:56</p>
+                            <p class="text_l">${weibo.newslist[1].hotword}</p>
+                            <p class="text_r">新浪微博  热度：${weibo.newslist[1].hotwordnum}  2020-05-05 11:08:56</p>
                         </li>
                         <li>
-                        <p class="text_l">村名王某因为被隔壁邻居的狗咬了，产生了纠纷，村名报警。</p>
-                        <p class="text_r">新浪微博  转发：86  2018-06-14 11:08:56</p>
+                            <p class="text_l">${weibo.newslist[8].hotword}</p>
+                            <p class="text_r">新浪微博  热度：${weibo.newslist[8].hotwordnum}  2020-05-05 11:08:56</p>
                         </li>
                    </ul>
                 </div>
@@ -167,7 +167,7 @@
             <!--  amidd_bott end-->
             <div class="pmiddboxtbott" >
               <h2 class="tith2 pt1">舆情同比分析</h2>
-              <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2018-06-10 至 2018-06-14</p></div>
+              <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2020-05-01 至 2020-05-05</p></div>
               <div class="box pbox">
                 <div id="pumiddboxtbott1" class="fl pumiddboxtbott1cont"></div>
                 <div  class="pumiddboxtbott2 fr"  >
@@ -185,15 +185,15 @@
         <!-- mrbox_top end -->
         <div class="mr_right fl">
           <div class="purightboxtop"><h2 class="tith2 pt12">舆情类别分析</h2>
-            <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2018-06-10</p></div>
+            <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2020-05-01</p></div>
             <div id="purightboxtop" class="purightboxtopcont"></div>
           </div>
           <div class="purightboxmidd"><h2 class="tith2 pt12">七日舆情走势分析</h2>
-            <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2018-06-10</p></div>
+            <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2020-05-01</p></div>
             <div id="purightboxmidd" class="purightboxmiddcont"></div>
           </div>
             <div class="purightboxbott"><h2 class="tith2 pt12">矛盾纠纷七日数据分析</h2>
-              <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2018-06-10 至 2018-06-14</p></div>
+              <div class="lefttoday_tit"><p class="fl">状态：已调节</p><p class="fr">时间段：2020-05-01 至 2020-05-05</p></div>
                 <div id="purightboxbott" class="purightboxbottcont" ></div>
             </div>
         </div>
@@ -248,7 +248,7 @@
                      axisLabel:{
                          color:"rgba(255,255,255,.5)"
                      },
-                      data: ['微博','网站','新闻','贴吧','论坛']
+                          data: ['贴吧','网站','新闻','抖音','微博']
                   },
                   series: [
                       {
@@ -285,7 +285,7 @@
                 [1800, 4000, 3100],
                 [1500, 1800, 1650]
             ];
-            var cities = ['甘孜县', '泸定县', '炉霍县', '色达县', '白玉县', '得荣县', '雅江县', '九龙县', '康定市' ];
+            var cities = ['武汉', '北京', '杭州', '广州', '深圳', '南京', '东莞', '长沙', '西藏' ];
             var barHeight = 50;
             option = {
               color:['#7ecef4'],
@@ -433,7 +433,7 @@
                              axisLabel:{
                                  color:"rgba(255,255,255,.5)"
                              },
-                              data: ['微博','网站','新闻','贴吧','论坛']
+                              data: ['杭州','深圳','北京','广州','武汉']
                           },
                           series: [
                               {

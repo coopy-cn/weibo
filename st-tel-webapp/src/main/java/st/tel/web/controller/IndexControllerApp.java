@@ -55,8 +55,14 @@ public class IndexControllerApp {
     }
 
     @GetMapping("/sentiment")
-    public ModelAndView sentiment() {
-        return new ModelAndView("/public");
+    public ModelAndView sentiment(Map<String, Object> map) {
+        String httpUrl = "http://api.tianapi.com/txapi/weibohot/index";
+        String jsonResult = "key=18db8388219aefde5622fcfbc2d3a11d";
+        String request = jsonEpidemic.request(httpUrl, jsonResult);
+        WeiBo weiBo = new Gson().fromJson(request, WeiBo.class);
+        map.put("weibo", weiBo);
+
+        return new ModelAndView("/public", map);
     }
 
 }
